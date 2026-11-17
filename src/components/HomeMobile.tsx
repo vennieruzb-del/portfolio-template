@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { SealCheck, Stack, PhoneCall, Search, User, FolderOpen } from '@/components/slab'
+import { SealCheck, Stack, PhoneCall, MagnifyingGlass, User, FolderOpen } from '@/components/slab'
 import { profile } from '@/data/profile'
 import QuickMenu from './QuickMenu'
 
@@ -37,7 +37,7 @@ const TILES = [
   { n: '01', label: 'Experience', to: '/projects', title: 'My professional background', desc: 'Roles, responsibilities, and work highlights.', Icon: FolderOpen },
   { n: '02', label: 'Capabilities', to: '/services', title: 'How I can support your team', desc: 'Administrative, customer, and operations support.', Icon: Stack },
   { n: '03', label: 'Lead Generation', to: '/projects', title: 'Prospecting and follow-through', desc: 'Outbound calling, lead qualification, and appointments.', Icon: PhoneCall },
-  { n: '04', label: 'Research', to: '/projects', title: 'Research and opportunity screening', desc: 'Government procurement platforms and solicitation review.', Icon: Search },
+  { n: '04', label: 'Research', to: '/projects', title: 'Research and opportunity screening', desc: 'Government procurement platforms and solicitation review.', Icon: MagnifyingGlass },
   { n: '05', label: 'About', to: '/about', title: `Hi, I'm ${profile.firstName}.`, desc: 'Education, experience, and working approach.', Icon: User },
 ] as const
 
