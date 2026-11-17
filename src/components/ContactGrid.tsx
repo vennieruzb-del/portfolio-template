@@ -60,10 +60,10 @@ export default function ContactGrid() {
       <header className="pgrid__head">
         <span className="pgrid__eyebrow">FAQs / Contact</span>
         <h1 className="pgrid__title" id="contact-title">
-          Your contact headline goes here.
+          Let’s connect.
         </h1>
         <p className="pgrid__lede">
-          PLACEHOLDER - tell me what to put here: one or two lines inviting people to write and saying what they get back.
+          I’m open to remote opportunities in executive assistance, lead generation, appointment setting, customer support, and administrative operations.
         </p>
       </header>
 
@@ -169,12 +169,12 @@ export default function ContactGrid() {
               </label>
 
               <label className="cgrid__field cgrid__field--grow">
-                <span className="cgrid__label">Tell me more about your business</span>
+                <span className="cgrid__label">Message</span>
                 <textarea
                   name="message"
                   required
                   maxLength={MAX_MESSAGE}
-                  placeholder="What do you need help with? What are you working with today?"
+                  placeholder="Share a little about the role or opportunity."
                 />
               </label>
 
@@ -197,7 +197,7 @@ export default function ContactGrid() {
                     {status.note}
                   </span>
                 ) : (
-                  <span className="cgrid__hint">Short reassurance line, e.g. your reply time.</span>
+                  <span className="cgrid__hint">Your message will open in your email app for you to send.</span>
                 )}
               </div>
             </form>
