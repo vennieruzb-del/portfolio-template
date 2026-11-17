@@ -2,7 +2,7 @@
  * Personal profile content for Vennie Ruz Barola.
  * Keep claims tied to the experience and tools listed on her resume.
  */
-import { Briefcase, PhoneCall, CalendarCheck, type Icon } from '@/components/slab'
+import { Briefcase, PhoneCall, Clock, type Icon } from '@/components/slab'
 
 export type SocialLink = { label: string; href: string; iconPath: string }
 export type Stat = { value: string; label: string; Icon: Icon }
@@ -34,7 +34,7 @@ export const profile: Profile = {
   stats: [
     { value: '4+ yrs', label: 'Customer-facing experience', Icon: Briefcase },
     { value: '100+', label: 'Outbound calls per day', Icon: PhoneCall },
-    { value: '30+', label: 'HVAC appointments per week', Icon: CalendarCheck },
+    { value: '30+', label: 'HVAC appointments per week', Icon: Clock },
   ],
   displayName: { line1: 'Reliable support.', line2: 'Clear communication.' },
   hero: {
