@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
-import { ArrowUpRight, FolderOpen, User, Stack, PhoneCall, Search, CalendarCheck } from '@/components/slab'
+import { ArrowUpRight, FolderOpen, User, Stack, PhoneCall, MagnifyingGlass, Briefcase } from '@/components/slab'
 
 const ITEMS = [
   { to: '/projects', title: 'Professional Experience', desc: 'Roles, responsibilities, and measurable workloads.', Icon: FolderOpen },
   { to: '/services', title: 'Core Capabilities', desc: 'Administrative support, customer service, and operations.', Icon: Stack },
   { to: '/about', title: 'About Me', desc: 'Background, education, and working approach.', Icon: User },
   { to: '/projects', title: 'Lead Generation', desc: 'Prospecting, outbound calls, qualification, and follow-up.', Icon: PhoneCall },
-  { to: '/projects', title: 'Research & Screening', desc: 'Government opportunity research and solicitation review.', Icon: Search },
-  { to: '/contact', title: 'Get in Touch', desc: 'Contact me about remote opportunities and support roles.', Icon: CalendarCheck },
+  { to: '/projects', title: 'Research & Screening', desc: 'Government opportunity research and solicitation review.', Icon: MagnifyingGlass },
+  { to: '/contact', title: 'Get in Touch', desc: 'Contact me about remote opportunities and support roles.', Icon: Briefcase },
 ]
 
 export default function HomeBento() {
