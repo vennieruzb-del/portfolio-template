@@ -1,30 +1,24 @@
 export type QA = { q: string; a: string }
 
-/**
- * The questions people ask before they email. One list, used by the FAQ
- * accordion on the Contact view (and the legacy long-scroll FAQ section).
- * Five questions, two or three sentences each: the accordion sits in a
- * fixed panel and more than that pushes the email row off the plate.
- */
 export const FAQS: QA[] = [
   {
-    q: 'What do you do?',
-    a: 'PLACEHOLDER - tell me what to put here: the kinds of work you take on, and who it is usually for.',
+    q: 'What kind of work do you do?',
+    a: 'I have experience in executive and administrative support, lead generation, appointment setting, customer service, CRM updates, research, and documentation.',
   },
   {
-    q: 'How fast can you start?',
-    a: 'PLACEHOLDER - tell me what to put here: your usual lead time for small fixes vs. larger projects, and your working hours.',
+    q: 'What tools have you used?',
+    a: 'My resume lists Salesforce, HubSpot, Microsoft Office, Google Workspace, SAM.gov, GovTribe, Govly, HigherGov, and Forecast.',
   },
   {
-    q: 'How much do you charge?',
-    a: 'PLACEHOLDER - tell me what to put here: how you price (hourly, per project, retainer) and how a quote is put together.',
+    q: 'Do you have phone support experience?',
+    a: 'Yes. My experience includes 100+ outbound calls per day in lead generation and high-volume customer support across several industries.',
   },
   {
     q: 'Where are you based?',
-    a: 'PLACEHOLDER - tell me what to put here: your location or timezone, and which client timezones you overlap with.',
+    a: 'I am based in Taguig City, Philippines. I am open to remote opportunities and can discuss schedule alignment based on the role.',
   },
   {
-    q: 'What happens after I write?',
-    a: 'PLACEHOLDER - tell me what to put here: how fast you reply and what the next step looks like.',
+    q: 'How can I contact you?',
+    a: 'You can reach me directly at vennieruzb@gmail.com or use the contact form on this page.',
   },
 ]
