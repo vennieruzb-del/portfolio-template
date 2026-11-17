@@ -1,47 +1,37 @@
-import Flagship from '@/components/Flagship'
+const HIGHLIGHTS = [
+  { value: '100+', label: 'Outbound calls handled per day', detail: 'AI Hub · Lead generation' },
+  { value: '30+', label: 'HVAC appointments scheduled weekly', detail: 'Customer service · Scheduling' },
+  { value: '80–100+', label: 'Customer interactions per day', detail: 'TForce Freight · Customer support' },
+]
 
-/**
- * ShowcaseGrid - the /showcase view on one glass sheet.
- *
- * A page head with a badge card on the right, then the Flagship build: the
- * five-tab product mock, the copy, the CTA, and the testimonial marquee that
- * runs under it. Same head and glass as Projects and Services, so the shell
- * reads as one system. Styles live in src/styles/showcase.css (.ktools).
- */
 export default function ShowcaseGrid() {
   return (
     <section className="pgrid ktools" aria-labelledby="showcase-title">
       <header className="pgrid__head ktools__head">
         <div className="ktools__head-copy">
-          <span className="pgrid__eyebrow">Showcase</span>
-          <h1 className="pgrid__title" id="showcase-title">
-            Your flagship product, and the people using it.
-          </h1>
-          <p className="pgrid__lede">
-            PLACEHOLDER - tell me what to put here: one line on what this product is and why a visitor should look at it.
-          </p>
-        </div>
-
-        {/* Badge slot. Fixed 320x72 box so it sits on the baseline of the
-            lede. Swap the image and text for a real badge, award or launch
-            listing, and point the link at it. */}
-        <div className="ktools__vote">
-          <p className="ktools__vote-label">
-            Featured on
-            <span aria-hidden="true" className="ktools__vote-dot" />
-            <span className="ktools__vote-ask">Placeholder</span>
-          </p>
-          <a className="ktools__vote-frame ktools__vote-card" href="#">
-            <img src="/placeholders/badge.svg" alt="" width="48" height="48" />
-            <span className="ktools__vote-text">
-              PLACEHOLDER - a badge, award or launch link
-            </span>
-          </a>
+          <span className="pgrid__eyebrow">Career Highlights</span>
+          <h1 className="pgrid__title" id="showcase-title">Experience measured in consistent daily work.</h1>
+          <p className="pgrid__lede">A few workload figures from my resume that show the pace and volume of work I have handled.</p>
         </div>
       </header>
-
       <div className="home__glass ktools__glass">
-        <Flagship eyebrow="Flagship build" />
+        <div className="sgrid__offers">
+          <div className="sgrid__offers-head">
+            <h2 className="sgrid__offers-title">Selected workload highlights</h2>
+            <p className="sgrid__offers-sub">Figures reflect the responsibilities listed for the relevant roles.</p>
+          </div>
+          <ul className="bento sgrid__services" role="list">
+            {HIGHLIGHTS.map((item) => (
+              <li key={item.label} className="bento__card sgrid__service">
+                <span className="bento__head">
+                  <span className="bento__title">{item.value}</span>
+                  <span className="bento__desc">{item.label}</span>
+                </span>
+                <span className="sgrid__chip">{item.detail}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   )
